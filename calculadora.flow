@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Calculadora"/>
+        <attribute name="authors" value="aclar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-05 11:21:07 "/>
+        <attribute name="created" value="YWNsYXI7RURTT05CQVRJU1RBOzIwMjYtMDgtMjU7IjA2OjI4OjE0ICI7MjYxMw=="/>
+        <attribute name="edited" value="YWNsYXI7RURTT05CQVRJU1RBOzIwMjYtMDktMDU7IjExOjIxOjA3ICI7OTsyNzE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="op&#231;&#227;o" type="Integer" array="False" size=""/>
+            <output expression="&quot;---CALCULADORA---&quot;" newline="True"/>
+            <output expression="&quot;1.SOMA&quot;" newline="True"/>
+            <output expression="&quot;2.SUBTRA&#199;&#195;O&quot;" newline="True"/>
+            <output expression="&quot;3.MULTIPLICA&#199;&#195;O&quot;" newline="True"/>
+            <output expression="&quot;4.DIVIS&#195;O&quot;" newline="True"/>
+            <output expression="&quot;5.POT&#202;NCIA&quot;" newline="True"/>
+            <output expression="&quot;6.RA&#205;Z QUADRADA&quot;" newline="True"/>
+            <output expression="&quot;7.RA&#205;Z C&#218;BICA&quot;" newline="True"/>
+            <output expression="&quot;8.PORCENTAGEM&quot;" newline="True"/>
+            <output expression="&quot;9.CIRCUNFER&#202;NCIA&quot;" newline="True"/>
+            <output expression="&quot;10.&#193;REA DO TRAP&#201;ZIO&quot;" newline="True"/>
+            <output expression="&quot;11.&#193;REA DO C&#205;RCULO&quot;" newline="True"/>
+            <output expression="&quot;12.&#193;REA DO TRI&#194;NGULO&quot;" newline="True"/>
+            <output expression="&quot;13.&#193;REA DO LOS&#194;NGULO&quot;" newline="True"/>
+            <output expression="&quot;14.LOGARITIMO&quot;" newline="True"/>
+            <output expression="&quot;15.CELSIUS - FAHRENHEIT&quot;" newline="True"/>
+            <output expression="&quot;16.CELSIUS - KELVIN&quot;" newline="True"/>
+            <output expression="&quot;17.KELVIN - FAHRENHEIT&quot;" newline="True"/>
+            <output expression="&quot;18.FAHRENHEIT - KELVIN&quot;" newline="True"/>
+            <output expression="&quot;19. M&#201;DIA ARITM&#201;TICA&quot;" newline="True"/>
+            <output expression="&quot;20. IMC&quot;" newline="True"/>
+            <output expression="&quot;0.ENCERRAR&quot;" newline="True"/>
+            <input variable="op&#231;&#227;o"/>
+            <if expression="op&#231;&#227;o = 1">
+                <then>
+                    <declare name="a, b, c" type="Real" array="False" size=""/>
+                    <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+                    <input variable="a"/>
+                    <output expression="&quot;Digite o segundo n&#250;mero&quot;" newline="True"/>
+                    <input variable="b"/>
+                    <assign variable="c" expression="a+b"/>
+                    <output expression="&quot;O valor da soma &#233;: &quot;&amp;c" newline="True"/>
+                </then>
+                <else>
+                    <if expression="op&#231;&#227;o = 2">
+                        <then>
+                            <declare name="a, b, c" type="Real" array="False" size=""/>
+                            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+                            <input variable="a"/>
+                            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+                            <input variable="b"/>
+                            <assign variable="c" expression="a-b"/>
+                            <output expression="&quot;O valor da subtra&#231;&#227;o &#233;: &quot;&amp;c" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="op&#231;&#227;o = 3">
+                                <then>
+                                    <declare name="a, b, c" type="Real" array="False" size=""/>
+                                    <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+                                    <input variable="a"/>
+                                    <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+                                    <input variable="b"/>
+                                    <assign variable="c" expression="a*b"/>
+                                    <output expression="&quot;O valor da multiplica&#231;&#227;o &#233;: &quot;&amp;c" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="op&#231;&#227;o = 4">
+                                        <then>
+                                            <declare name="a, b, c" type="Real" array="False" size=""/>
+                                            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+                                            <input variable="a"/>
+                                            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+                                            <input variable="b"/>
+                                            <assign variable="c" expression="a/b"/>
+                                            <output expression="&quot;O valor da divis&#227;o &#233;: &quot;&amp;c" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="op&#231;&#227;o = 5">
+                                                <then>
+                                                    <declare name="a, b, c" type="Real" array="False" size=""/>
+                                                    <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+                                                    <input variable="a"/>
+                                                    <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+                                                    <input variable="b"/>
+                                                    <assign variable="c" expression="a^b"/>
+                                                    <output expression="&quot;O valor da pot&#234;ncia &#233;: &quot;&amp;c" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="op&#231;&#227;o= 6">
+                                                        <then>
+                                                            <declare name="a, b" type="Real" array="False" size=""/>
+                                                            <output expression="&quot;Digite o n&#250;mero: &quot;" newline="True"/>
+                                                            <input variable="a"/>
+                                                            <assign variable="b" expression="sqrt(a)"/>
+                                                            <output expression="&quot;O ra&#237;z quadrada &#233;: &quot;&amp;b" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="op&#231;&#227;o = 7">
+                                                                <then>
+                                                                    <declare name="a, b" type="Real" array="False" size=""/>
+                                                                    <output expression="&quot;Digite o valor de a&quot;" newline="True"/>
+                                                                    <input variable="a"/>
+                                                                    <assign variable="b" expression="cbrt(a)"/>
+                                                                    <output expression="&quot;A ra&#237;z c&#250;bica &#233;: &quot;&amp;b" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="op&#231;&#227;o = 8">
+                                                                        <then>
+                                                                            <declare name="a, b, c" type="Real" array="False" size=""/>
+                                                                            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+                                                                            <input variable="a"/>
+                                                                            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+                                                                            <input variable="b"/>
+                                                                            <assign variable="c" expression="(a * b) / 100"/>
+                                                                            <output expression="&quot;A porcentagem &#233;: &quot;&amp;c" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="op&#231;&#227;o = 9">
+                                                                                <then>
+                                                                                    <declare name="a, b" type="Real" array="False" size=""/>
+                                                                                    <output expression="&quot;Digite o valor do raio: &quot;" newline="True"/>
+                                                                                    <input variable="a"/>
+                                                                                    <assign variable="b" expression="2 * 3.1415 * a"/>
+                                                                                    <output expression="&quot;A circunfer&#234;ncia &#233; de: &quot;&amp;b" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="op&#231;&#227;o = 10">
+                                                                                        <then>
+                                                                                            <declare name="a, b, c, d" type="Real" array="False" size=""/>
+                                                                                            <output expression="&quot;Digite o valor da primeira base: &quot;" newline="True"/>
+                                                                                            <input variable="a"/>
+                                                                                            <output expression="&quot;Digite o valor da segunda base: &quot;" newline="True"/>
+                                                                                            <input variable="b"/>
+                                                                                            <output expression="&quot;Digite o valor da altura: &quot;" newline="True"/>
+                                                                                            <input variable="c"/>
+                                                                                            <assign variable="d" expression="(a + b) * c / 2"/>
+                                                                                            <output expression="&quot;A &#225;rea do trap&#233;zio &#233; de: &quot;&amp;d" newline="True"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="op&#231;&#227;o = 11">
+                                                                                                <then>
+                                                                                                    <declare name="a, b" type="Real" array="False" size=""/>
+                                                                                                    <output expression="&quot;Digite o valor do raio: &quot;" newline="True"/>
+                                                                                                    <input variable="a"/>
+                                                                                                    <assign variable="b" expression="3.1415 * a^2"/>
+                                                                                                    <output expression="&quot;A &#225;rea do c&#237;rculo &#233;: &quot;&amp;b" newline="True"/>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <if expression="op&#231;&#227;o = 12">
+                                                                                                        <then>
+                                                                                                            <declare name="a, b, c" type="Real" array="False" size=""/>
+                                                                                                            <output expression="&quot;Digite o valor da base&quot;" newline="True"/>
+                                                                                                            <input variable="a"/>
+                                                                                                            <output expression="&quot;Digite o valor da altura&quot;" newline="True"/>
+                                                                                                            <input variable="b"/>
+                                                                                                            <assign variable="c" expression="(a * b) / 2"/>
+                                                                                                            <output expression="&quot;A &#225;rea do tri&#226;ngulo &#233;: &quot;&amp;c" newline="True"/>
+                                                                                                        </then>
+                                                                                                        <else>
+                                                                                                            <if expression="op&#231;&#227;o = 13">
+                                                                                                                <then>
+                                                                                                                    <declare name="a, b, c" type="Real" array="False" size=""/>
+                                                                                                                    <output expression="&quot;Digite o valor do primeiro di&#226;metro: &quot;" newline="True"/>
+                                                                                                                    <input variable="a"/>
+                                                                                                                    <output expression="&quot;Digite o valor do segundo di&#226;metro: &quot;" newline="True"/>
+                                                                                                                    <input variable="b"/>
+                                                                                                                    <assign variable="c" expression="(a * b) / 2"/>
+                                                                                                                    <output expression="&quot;A &#225;rea do los&#226;ngulo &#233;: &quot;&amp;c" newline="True"/>
+                                                                                                                </then>
+                                                                                                                <else>
+                                                                                                                    <if expression="op&#231;&#227;o = 14">
+                                                                                                                        <then>
+                                                                                                                            <declare name="a, b" type="Real" array="False" size=""/>
+                                                                                                                            <output expression="&quot;Digite o n&#250;mero: &quot;" newline="True"/>
+                                                                                                                            <input variable="a"/>
+                                                                                                                            <assign variable="b" expression="log(a)"/>
+                                                                                                                            <output expression="&quot;O valor de log &#233;: &quot;&amp;b" newline="True"/>
+                                                                                                                        </then>
+                                                                                                                        <else>
+                                                                                                                            <if expression="op&#231;&#227;o = 15">
+                                                                                                                                <then>
+                                                                                                                                    <declare name="a, b" type="Real" array="False" size=""/>
+                                                                                                                                    <output expression="&quot;Digite a temperatura em Celsius: &quot;" newline="True"/>
+                                                                                                                                    <input variable="a"/>
+                                                                                                                                    <assign variable="b" expression="(a * 1.8)  + 32"/>
+                                                                                                                                    <output expression="&quot;A temperatura em Fahrenheit &#233; de: &quot;&amp;b" newline="True"/>
+                                                                                                                                </then>
+                                                                                                                                <else>
+                                                                                                                                    <if expression="op&#231;&#227;o = 16">
+                                                                                                                                        <then>
+                                                                                                                                            <declare name="a, b" type="Real" array="False" size=""/>
+                                                                                                                                            <output expression="&quot;Digite a temperatura em Celsius: &quot;" newline="True"/>
+                                                                                                                                            <input variable="a"/>
+                                                                                                                                            <assign variable="b" expression="a + 273"/>
+                                                                                                                                            <output expression="&quot;A temperatura em Kelvin &#233; de: &quot;&amp;b" newline="True"/>
+                                                                                                                                        </then>
+                                                                                                                                        <else>
+                                                                                                                                            <if expression="op&#231;&#227;o = 17">
+                                                                                                                                                <then>
+                                                                                                                                                    <declare name="a, b" type="Real" array="False" size=""/>
+                                                                                                                                                    <output expression="&quot;Digite a temperatura em Kelvin: &quot;" newline="True"/>
+                                                                                                                                                    <input variable="a"/>
+                                                                                                                                                    <assign variable="b" expression="(a - 273) * 1.8 + 32"/>
+                                                                                                                                                    <output expression="&quot;A temperatura em Fahrenheit &#233; de: &quot;&amp;b" newline="True"/>
+                                                                                                                                                </then>
+                                                                                                                                                <else>
+                                                                                                                                                    <if expression="op&#231;&#227;o = 18">
+                                                                                                                                                        <then>
+                                                                                                                                                            <declare name="a, b" type="Real" array="False" size=""/>
+                                                                                                                                                            <output expression="&quot;Digite a temperatura em Fahrenheit: &quot;" newline="True"/>
+                                                                                                                                                            <input variable="a"/>
+                                                                                                                                                            <assign variable="b" expression="(a - 32) * 5/9 + 273"/>
+                                                                                                                                                            <output expression="&quot;A temperatura em kelvin &#233; de: &quot;&amp;b" newline="True"/>
+                                                                                                                                                        </then>
+                                                                                                                                                        <else>
+                                                                                                                                                            <if expression="op&#231;&#227;o = 19">
+                                                                                                                                                                <then>
+                                                                                                                                                                    <declare name="a, b, c" type="Real" array="False" size=""/>
+                                                                                                                                                                    <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+                                                                                                                                                                    <input variable="a"/>
+                                                                                                                                                                    <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+                                                                                                                                                                    <input variable="b"/>
+                                                                                                                                                                    <assign variable="c" expression="(a + b) / 2"/>
+                                                                                                                                                                    <output expression="&quot;A m&#233;dia aritim&#233;tica &#233;: &quot;&amp;c" newline="True"/>
+                                                                                                                                                                </then>
+                                                                                                                                                                <else>
+                                                                                                                                                                    <if expression="op&#231;&#227;o = 20">
+                                                                                                                                                                        <then>
+                                                                                                                                                                            <declare name="a, b, c" type="Real" array="False" size=""/>
+                                                                                                                                                                            <output expression="&quot;Digite o seu peso em Kilos: &quot;" newline="True"/>
+                                                                                                                                                                            <input variable="a"/>
+                                                                                                                                                                            <output expression="&quot;Digite sua altura em Metros: &quot;" newline="True"/>
+                                                                                                                                                                            <input variable="b"/>
+                                                                                                                                                                            <assign variable="c" expression="a / (b * b)"/>
+                                                                                                                                                                            <output expression="&quot;Seu IMC &#233; de &#233;: &quot;&amp;c" newline="True"/>
+                                                                                                                                                                        </then>
+                                                                                                                                                                        <else>
+                                                                                                                                                                            <if expression="op&#231;&#227;o = 0">
+                                                                                                                                                                                <then>
+                                                                                                                                                                                    <output expression="&quot;Encerrar Programa&quot;" newline="True"/>
+                                                                                                                                                                                    <output expression="&quot;...&quot;" newline="True"/>
+                                                                                                                                                                                    <output expression="&quot;PROGRAMA ENCERRADO&quot;" newline="True"/>
+                                                                                                                                                                                </then>
+                                                                                                                                                                                <else/>
+                                                                                                                                                                            </if>
+                                                                                                                                                                        </else>
+                                                                                                                                                                    </if>
+                                                                                                                                                                </else>
+                                                                                                                                                            </if>
+                                                                                                                                                        </else>
+                                                                                                                                                    </if>
+                                                                                                                                                </else>
+                                                                                                                                            </if>
+                                                                                                                                        </else>
+                                                                                                                                    </if>
+                                                                                                                                </else>
+                                                                                                                            </if>
+                                                                                                                        </else>
+                                                                                                                    </if>
+                                                                                                                </else>
+                                                                                                            </if>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
